@@ -324,7 +324,7 @@ export class JiraIssueSettingTab extends PluginSettingTab {
         } else if (newAccount.authenticationType === EAuthenticationTypes.BEARER_TOKEN) {
             new Setting(containerEl)
                 .setName('Bearer token')
-                .setDesc('Token to access your Jira account using OAuth3 Bearer token authentication.')
+                .setDesc('Token to access your Jira account using OAuth2 Bearer token authentication.')
                 .addText(text => text
                     // .setPlaceholder('')
                     .setValue(newAccount.bareToken)
